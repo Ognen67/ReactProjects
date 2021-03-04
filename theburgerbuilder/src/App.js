@@ -11,6 +11,7 @@ class App extends Component {
             burgers: [
                 { name: 'classic', price: 130 },
                 { name: 'cheese', price: 140 },
+                { name: 'bacon', price: 160 },
                 { name: 'double', price: 180 },
                 { name: 'double extra sauce', price: 195 },
             ],
