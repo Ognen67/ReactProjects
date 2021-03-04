@@ -9,11 +9,11 @@ class App extends Component {
         console.log('[App.js] constructor', props)
         this.state = {
             burgers: [
-                { name: 'classic', price: 130 },
-                { name: 'cheese', price: 140 },
-                { name: 'bacon', price: 160 },
-                { name: 'double', price: 180 },
-                { name: 'double extra sauce', price: 195 },
+                { name: 'Classic', price: 130 },
+                { name: 'Cheese', price: 140 },
+                { name: 'Bacon', price: 160 },
+                { name: 'Double', price: 180 },
+                { name: 'Double extra sauce', price: 195 },
             ],
             isOpened : false
         }
