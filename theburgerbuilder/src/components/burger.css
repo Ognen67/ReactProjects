@@ -1,0 +1,12 @@
+.container {
+    align-items: center;
+    justify-content: center;
+    border: 2px solid green;
+    margin: 10px;
+    width: fit-content;
+}
+
+.container:hover {
+    box-shadow: 5px 5px 15px #ff4567;
+    border: 2px solid red;
+}
