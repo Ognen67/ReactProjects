@@ -9,7 +9,6 @@ const AnimeCard = (props) => (
         <p className={classes.Score}>Score: {props.score}, Rated: {props.rated}</p>
         <div className={classes.Synopsis}>
             <p className={classes.Score}>Synopsis: {props.synopsis}</p>
-
         </div>
     </div>
 );

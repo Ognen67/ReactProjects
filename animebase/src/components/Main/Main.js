@@ -40,6 +40,7 @@ const Main = (props) => {
     useEffect(() => {
         getTopAnime()
         console.log(topAnime)
+        console.log("asdasd")
     }, [])
 
     const topAnimeList = animeList
