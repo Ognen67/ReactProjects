@@ -1,0 +1,31 @@
+.Card {
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #1d1d1d;
+    background-color: #323232;
+}
+
+.Card a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease 0s;
+}
+
+.Card a:hover {
+    color: #0088a9;
+}
+
+.Title {
+    font-size: larger;
+    padding: 15px;
+}
+
+.Synopsis {
+    text-align: left;
+}
+
+.Score {
+    color: white;
+}

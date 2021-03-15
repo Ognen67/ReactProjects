@@ -1,0 +1,41 @@
+.Main {
+    text-align: center;
+}
+
+.Title {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.Search {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.AnimeList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.SearchBtn {
+    background-color: #353535;
+    color: white;
+}
+
+.Input {
+    color: white;
+    background-color: #2d2d2d;
+    margin: 20px 10px;
+}
+
+.Settings {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
