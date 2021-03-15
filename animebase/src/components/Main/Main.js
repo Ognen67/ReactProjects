@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button'
 
 import classes from './Main.module.css'
 import {Input} from "@material-ui/core";
+import TextField from "@material-ui/core/TextField";
 
 const Main = (props) => {
 
@@ -61,14 +62,18 @@ const Main = (props) => {
                     <option>Title</option>
                     <option>Score</option>
                 </select>
-                <Input className={classes.Input}
-                       placeholder="Search for an anime"
-                       type="search"
+                <input className={classes.Input}
+                       id="standard-basic" label="Search for an anime"
+                       variant="filled"
                        value={search}
                        required
                        onChange={e => SetSearch(e.target.value)}
                 />
-                <Button className={classes.SearchBtn} onClick={handleSearch}>Search</Button>
+                <Button
+                    variant="contained"
+                    color="primary"
+                    className={classes.SearchBtn}
+                    onClick={handleSearch}>Search</Button>
 
             </div>
             <div className={classes.AnimeList}>
