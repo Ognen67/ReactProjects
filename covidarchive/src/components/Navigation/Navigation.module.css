@@ -1,0 +1,43 @@
+.Header {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #2e3139;
+    height: fit-content;
+    color: white;
+    padding: 10px 50px;
+}
+
+.Title {
+    margin-right: auto;
+    text-decoration: none;
+    color: white;
+}
+
+.Title:hover {
+    color: #949494;
+    transition: all 0.1s ease 0s;
+}
+
+
+.NavArea {
+    list-style: none;
+}
+
+.NavArea li {
+    display: inline-block;
+    padding: 0 15px;
+    color: white;
+}
+
+.NavArea li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.NavArea li a:hover {
+    color: #8d8d8d;
+}
