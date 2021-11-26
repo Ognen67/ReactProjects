@@ -7,40 +7,34 @@ const Home = (props) => {
 
     const [data, setData] = useState({})
 
-
-
-
-    useEffect(() => {
+    const fetchData = async () => {
         axios.get('https://api.covid19api.com/summary')
-            .then(res => {
-                console.log(res.data)
-                setData(res.data)
-            })
-    }, [])
-
-    const displayCountries = () => {
-        console.log(data.Countries)
-        console.log(data.Countries[0].Country)
-
+            .then(res => setData(res.data))
     }
 
-    const countries = data.Countries.map(country =>
-        <CountryCard
-            name={country.Country}
-            totalConfirmed={country.TotalConfirmed}
-            totalDeaths={country.TotalDeaths}
-            totalRecovered={country.TotalRecovered}
-        />
-
-        )
+    useEffect(() => {
+        fetchData().then(r => console.log(r))
+        console.log(data)
+    }, [])
 
 
+    // const countries = data.Countries
+    //     .map(country =>
+    //         <CountryCard
+    //             name={country.Country}
+    //             totalConfirmed={country.TotalConfirmed}
+    //             totalDeaths={country.TotalDeaths}
+    //             totalRecovered={country.TotalRecovered}
+    //             key={country.id}
+    //
+    //         />
+    //     )
 
 
 
     return (
         <div className={classes.Home}>
-            {countries}
+            <a href="https://www.w3schools.com/" target="_top">Visit W3Schools.com!</a>
         </div>
     )
 }
